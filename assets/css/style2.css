@@ -1,3 +1,5 @@
+@charset "utf-8";
+@import url("style.css");
 
 .btn-primary {background: #E6007E; box-shadow: none;}
 .btn-primary:hover, .btn.bg-gradient-primary:hover {background-color: #E6007E; border-color: #E6007E; box-shadow: none;}
