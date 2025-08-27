@@ -4,7 +4,15 @@
 .btn-primary {background: #E6007E; box-shadow: none;}
 .btn-primary:hover, .btn.bg-gradient-primary:hover {background-color: #E6007E; border-color: #E6007E; box-shadow: none;}
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; }
+.btn-tooltip {width: 16px; height: 16px; padding: 0; margin: 0;}
+.ico-tooltip {display: inline-block; width: 16px; height: 16px; padding: 0; background: url('../img/icon_question.png') 0 0 no-repeat;}
 
-/* input 필수값 */
+/* input */
 .required label {position: relative;}
-.required label::after {content:'*'; color: #FF5151; padding: 0 3px; vertical-align: text-top;}
+.required label::after {content:'*'; color: #FF5151; padding: 0 3px;}
+.desc1.valid {color: #00AA02;}
+.desc1.valid .desc1info::before {background: url('../img/icon_success.png') 0 0 no-repeat;}
+.desc1.invalid {color: #F94E4E;}
+.desc1.invalid .desc1info::before {background: url('../img/icon_error.png') 0 0 no-repeat;}
+
+.fs-14 {font-size: 0.9rem;}
