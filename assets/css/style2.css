@@ -1,0 +1,8 @@
+
+.btn-primary {background: #E6007E; box-shadow: none;}
+.btn-primary:hover, .btn.bg-gradient-primary:hover {background-color: #E6007E; border-color: #E6007E; box-shadow: none;}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; }
+
+/* input 필수값 */
+.required label {position: relative;}
+.required label::after {content:'*'; color: #FF5151; padding: 0 3px; vertical-align: text-top;}
