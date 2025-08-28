@@ -57,6 +57,7 @@
                 <div class="input-btn-group">
                   <button type="button" class="btn btn-delete"><i class="ico-delete"></i></button>
                   <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0 ">Check</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0 border-0" disabled>OK!</button>
                 </div>
               </div>
               <div class="desc1 mt-1"><span class="desc1info"></span>Please check if your ID is available.</div>
@@ -71,6 +72,13 @@
                   <button class="btn btn-tooltip"><i class="ico-tooltip"></i></button>
                 </label>
                 <input type="text" class="form-control error" id="" placeholder="8–50 chars, letter + number + symbol" required>
+                <div class="input-btn-group">
+                  <!-- 비밀번호 보이기 클릭 시 button에 class 'on' 추가 -->
+                  <button type="button" class="btn btn-pwd-toggle">
+                    <i class="ico-eye-off"></i>
+                    <i class="ico-eye-on"></i>
+                  </button>
+                </div>
               </div>
               <div class="desc1 invalid mt-1">
                 <span class="desc1info"></span>
@@ -93,7 +101,7 @@
           </div>
         </section>
       </div>
-      <div class="col-lg-8 mx-auto fixed-bottom">
+      <div class="col-lg-8 mx-auto fixed-bottom page-btn">
         <button type="button" class="btn btn-primary w-100 mx-auto" disabled>Next</button>
       </div>
     </div>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.ico">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+  <title>USFK</title>
+  <!-- CSS Files -->
+  <link href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+  <link href="../assets/css/font.css" rel="stylesheet" />
+  <link href="../assets/css/style2.css" rel="stylesheet" />
+</head>
+
+<body class="features-sections">
+  <div class="container toparea">
+    <!-- START Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border0">
+      <div class="container px-3">
+        <a class="navbar-brand" href="javascript:;" target="_blank">
+          <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
+        </a>
+        <h1 class="col-lg-12 mx-auto text-center ">
+          <span class="mb-0 toptit">
+            3. Payment Info
+          </span>
+        </h1>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="row stepbar mx-auto">
+      <div class="col active"></div>
+      <div class="col active"></div>
+      <div class="col active"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <!-- START Container -->
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <section>
+          <div class="row">
+            <h2 class="h2tit mb-0">Card Details</h2>
+          </div>
+          <div class="container py-4">
+            <div class="row">
+              <div class="input-group input-group-static required">
+                <label for="">Card holder’s Name</label>
+                <input type="text" class="form-control" id="" placeholder="Name on card"> 
+              </div>
+
+              <div class="input-group input-group-static mt-4 required">
+                <label for="">Credit card Type</label>
+                <ul class="card-list">
+                  <!-- 선택 시 li에 class active 추가 -->
+                  <li class="active">
+                    <a href="#">
+                      <p class="imgbox"><img src="../assets/img/logo_visa.png" alt=""></p><span>VISA</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#">
+                      <p class="imgbox"><img src="../assets/img/logo_master.png" alt=""></p><span>MASTER</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="input-group input-group-static mt-4 required">
+                <label for="">Credit card Number</label>
+                <input type="text" class="form-control" id="" placeholder="16 chars, numbers only" required>
+              </div>
+
+              <div class="input-group input-group-static mt-4 required">
+                <label for="">Expiration date</label>
+                <input type="text" class="form-control" id="" placeholder="MM/YY" required>
+                <div class="input-btn-group">
+                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0">Check</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0 border-0" disabled>Check</button>
+                </div>
+              </div>
+              <div class="desc1 invalid mt-1">
+                <span class="desc1info"></span>
+                Card verification failed. Please try again.
+              </div>
+              <div class="desc1 valid mt-1">
+                <span class="desc1info"></span>
+                Card verified successfully.
+              </div>
+
+              <div class="col-lg-12 mx-auto mt-3">
+                <div class="noticebox">
+                  <p class="caution-txt">To verify the validity of your card, we will process a $1 transaction, which will be immediately canceled.</p> 
+                  <ul class="point-list">
+                    <li>Please note that only Visa and MasterCard are accepted.</li>
+                    <li>A credit card under your name is required, and the registered card information will be utilized for future service
+                    payments.</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-8 mx-auto fixed-bottom page-btn">
+        <button type="button" class="btn btn-primary w-100 mx-auto" disabled>Next</button>
+      </div>
+    </div>
+  </div>
+  <!-- END Container -->
+  
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
+</html>

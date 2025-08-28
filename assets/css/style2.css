@@ -1,13 +1,24 @@
 @charset "utf-8";
 @import url("style.css");
 
+.fs-14 {font-size: 0.9rem;}
+
+/* button */
+.page-btn {display: flex; align-items: center; justify-content: center;}
+.page-btn button {max-width: 644px;}
 .btn-primary {background: #E6007E; box-shadow: none;}
 .btn-primary:hover, .btn.bg-gradient-primary:hover {background-color: #E6007E; border-color: #E6007E; box-shadow: none;}
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; }
+.btn.btn-outline-secondary {background: #fff;}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; opacity: 1;}
 .btn-tooltip {width: 16px; height: 16px; padding: 0; margin: 0;}
 .ico-tooltip {display: inline-block; width: 16px; height: 16px; padding: 0; background: url('../img/icon_question.png') 0 0 no-repeat;}
-.btn-delete {width: 24px; height: 24px; padding: 0; margin: 0;}
+.btn-delete,
+.btn-pwd-toggle {width: 24px; height: 24px; padding: 0; margin: 0;}
 .ico-delete {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_delete.png') 0 0 no-repeat;}
+.ico-eye-on {display: none; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_on.png') 0 0 no-repeat;}
+.ico-eye-off {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_off.png') 0 0 no-repeat;}
+.btn-pwd-toggle.on .ico-eye-on {display: inline-block;}
+.btn-pwd-toggle.on .ico-eye-off {display: none;}
 
 /* input */
 .required label {position: relative;}
@@ -24,6 +35,7 @@
 {background-image: linear-gradient(0deg, #E6007E 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0);}
 .input-group.input-group-static .form-control.success {background-image: linear-gradient(0deg, #00AA02 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0); background-size: 100% 100%, 100% 100%;}
 .input-group.input-group-static .form-control.error {background-image: linear-gradient(0deg, #F94E4E  2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0); background-size: 100% 100%, 100% 100%;}
+
 /* checkbox */
 .form-check-label {margin-left: 10px;margin-bottom: 0; color: #4D5461;}
 .form-check {display: inline-flex; align-items: center; margin-bottom: 0;}
@@ -32,9 +44,32 @@
 .form-check:not(.form-switch) .form-check-input[type="checkbox"]:after {content:''; background: url('../img/check_default.png') 0 0 no-repeat; opacity: 1; transition: all 0.2s;}
 .form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked:after {background: url('../img/check_checked.png') 0 0 no-repeat;}
 
+/* button select */
+.btn-sel {postion:relative; display: inline-flex; align-items: center; justify-content: space-between; width: 100%; height: 59.5px; padding: 17px 0 17px; color: #CACCD2; text-align: left; font-size: 20px;}
+.btn-sel::after {content: ''; display: block; width: 24px; height: 24px; background: url('../img/down-arrow.svg') center no-repeat;}
+.btn-sel .val {text-align: left;}
+.btn-sel .place-holder {color: #CACCD2;}
+
+.input-group .btn-input-group {display: flex; width: 100%; gap: 4px;}
+.input-group .btn-input-group .btn-sel {max-width: fit-content; flex-shrink: 0;}
+.input-group .btn-input-group input.form-control {flex: 1; width: 100%; font-size: 20px;}
+ 
 .noticebox p {margin-bottom: 8px; color: #4d5461; font-size: 14px; font-weight: 500; line-height: 120%;}
+.noticebox p.caution-txt {position: relative; padding-left: 12px; margin-bottom: 8px; color: #4d5461; font-size: 14px; font-weight: 500; line-height: 120%;}
+.noticebox p.caution-txt::before {content:'※'; display: block; position: absolute; left: 0; top: 0;}
 .noticebox .point-list {padding-left: 12px;}
 .noticebox .point-list li {list-style: none; position: relative; padding-left: 10px; color: #828591; font-size: 14px; line-height: 120&}
-.noticebox .point-list li::before {content:'-';display: block; position: absolute; left: 0; top: 0;}
+.noticebox .point-list li::before {content:'-'; display: block; position: absolute; left: 0; top: 0;}
 
-.fs-14 {font-size: 0.9rem;}     
+/* credit card */
+.card-list {display: flex; width: 100%; margin: 11px 0 0 0;}
+.card-list > li {list-style: none; flex-grow: 1; height: 62px; background: #fff;}
+.card-list > li + li {margin-left: -1px;}
+.card-list > li > a {position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 62px; box-shadow: 0 0 0 1px #ccc inset;}
+.card-list > li:first-child > a {border-radius: 8px 0 0 8px;}
+.card-list > li:last-child > a {border-radius: 0 8px 8px 0;}
+.card-list > li.active > a:after {content:''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-shadow: 0 0 0 1px #E6007E inset; z-index: 10;}
+.card-list > li:first-child.active > a:after {border-radius: 8px 0 0 8px;}
+.card-list > li:last-child.active > a:after {border-radius: 0 8px 8px 0;}
+.card-list li .imgbox {display:inline-flex; align-items: center; justify-content: center; margin-bottom: 0; width: 40px; height: 40px; text-align: center;}
+.card-list li span {color: #4D5461; font-size: 12px;}

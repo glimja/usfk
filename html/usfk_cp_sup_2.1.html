@@ -23,7 +23,7 @@
         </a>
         <h1 class="col-lg-12 mx-auto text-center ">
           <span class="mb-0 toptit">
-            2. Device Info
+            1. Your Info
           </span>
         </h1>
       </div>
@@ -31,7 +31,7 @@
     <!-- End Navbar -->
     <div class="row stepbar mx-auto">
       <div class="col active"></div>
-      <div class="col active"></div>
+      <div class="col"></div>
       <div class="col"></div>
       <div class="col"></div>
       <div class="col"></div>
@@ -44,34 +44,46 @@
       <div class="col-lg-8 mx-auto">
         <section>
           <div class="row">
-            <h2 class="h2tit mb-0">Device information</h2>
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="h2tit mb-0">Base Infomation</h2>
+              <span class="fs-14 pointcolor">Page 2/3</span>
+            </div>
           </div>
           <div class="container py-4">
             <div class="row">
               <div class="input-group input-group-static required">
-                <label for="">Device MAC Address</label>
-                <input type="text" class="form-control" id="" placeholder="Only 'A~F', 'a~f', and '0~9' are allowed"> 
-              </div>
-
-              <div class="mt-2">
-                <div class="form-check ps-0">
-                  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                  <label class="form-check-label" for="checkDefault">
-                    Set as Default MAC Address
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-lg-12 mx-auto mt-3">
-                <div class="noticebox">
-                  <p class="caution-txt">MAC address registration is required</p> 
-                  <ul class="point-list">
-                    <li>Your device must use its original static MAC address</li>
-                    <li>Private or randomized MAC addresses may not be supported</li>
-                  </ul>
-                </div>
+                <label for="">Base Name</label>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <!-- <span class="place-holder">Choose your base</span> -->
+                  <span class="val">Kusan AB</span>
+                </button>
               </div>
               
+              <div class="input-group input-group-static mt-4 required" >
+                <label for="">Building Number</label>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <span class="place-holder">Choose your building Number</span>
+                </button>
+              </div>
+              
+              <div class="input-group input-group-static mt-4 required">
+                <label for="">Room Number</label>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <span class="place-holder">Choose your Room Number</span>
+                </button>
+              </div>
+
+              <div class="input-group input-group-static mt-4 required">
+                <label for="">Room Number</label>
+                <div class="btn-input-group">
+                  <button class="form-control btn-sel" data-pop-btn="">
+                    <span class="val">Enter Manually</span>
+                  </button>
+                  <input type="text" class="form-control" id="" placeholder="Choose your Room Number" required>
+                </div>
+              </div>
+              <div class="desc1 mt-1"><span class="desc1info"></span>Selected location is ready for activation.</div>
+
             </div>
           </div>
         </section>
