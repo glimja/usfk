@@ -42,11 +42,14 @@
       </button>
       <div class="collapse navbar-collapse w-100 pt-3 pb-2" id="navigation">
         <ul class="navbar-nav navbar-nav-hover ms-auto">
-          <li class="nav-item dropdown dropdown-hover mx-1">
-            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuMyAccount" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
               <p class="d-inline text-lg font-weight-semibold">My Account</p>
             </span>
-            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuMyAccount">
+            <!-- <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuAccount" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a> -->
+            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuAccount">
               <div class="d-none d-lg-block">
                 <a href="javascript:;" class="dropdown-item border-radius-md">
                   <span>Customer Info</span>
@@ -58,28 +61,43 @@
                   <span>Photo ID</span>
                 </a>
               </div>
+
+              <div class="d-lg-none">
+                <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                  Landing Pages
+                </h6>
+
+                <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+                  <span>About Us</span>
+                </a>
+                <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+                  <span>Contact Us</span>
+                </a>
+                <a href="./pages/author.html" class="dropdown-item border-radius-md">
+                  <span>Author</span>
+                </a>
+
+                <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+                  Account
+                </h6>
+                <a href="./pages/sign-in.html" class="dropdown-item border-radius-md">
+                  <span>Sign In</span>
+                </a>
+
+              </div>
+
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-1">
-            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuMyService" data-bs-toggle="dropdown" aria-expanded="false">
+
+          <!-- <li class="nav-item mx-2">
+            <a class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank">
+              <p class="d-inline text-lg font-weight-semibold">My Account</p>
+            </a>
+          </li> -->
+          <li class="nav-item mx-2">
+            <a class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank">
               <p class="d-inline text-lg font-weight-semibold">My Service</p>
-            </span>
-            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuMyService">
-              <div class="d-none d-lg-block">
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>My Plan</span>
-                </a>
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>My device</span>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-1">
-            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuHelpPage" data-bs-toggle="dropdown" aria-expanded="false">
-              <p class="d-inline text-lg font-weight-semibold">Help Page</p>
-            </span>
-            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuHelpPage">
+            </a><div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuService">
               <div class="d-none d-lg-block">
                 <a href="javascript:;" class="dropdown-item border-radius-md">
                   <span>Customer Info</span>
@@ -93,38 +111,20 @@
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-1">
-            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuServiceHighlights" data-bs-toggle="dropdown" aria-expanded="false">
-              <p class="d-inline text-lg font-weight-semibold">Service Highlights</p>
-            </span>
-            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuServiceHighlights">
-              <div class="d-none d-lg-block">
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>Service Features</span>
-                </a>
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>LG U+ Shop</span>
-                </a>
-              </div>
-            </div>
+          <li class="nav-item ms-lg-auto">
+            <a class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank">
+              <p class="d-inline text-lg font-weight-semibold">Help Page</p>
+            </a>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-1">
-            <span class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank" id="dropdownMenuNewevents" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item ms-lg-auto">
+            <a class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank">
+              <p class="d-inline text-lg font-weight-semibold">Service Highlights</p>
+            </a>
+          </li>
+          <li class="nav-item ms-lg-auto">
+            <a class="nav-link nav-link-icon me-2" href="javascript:;" target="_blank">
               <p class="d-inline text-lg font-weight-semibold">New & events</p>
-            </span>
-            <div class="depth2menu dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-1 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuNewevents">
-              <div class="d-none d-lg-block">
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>New & events</span>
-                </a>
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>Payment Info</span>
-                </a>
-                <a href="javascript:;" class="dropdown-item border-radius-md">
-                  <span>Privacy Policy History</span>
-                </a>
-              </div>
-            </div>
+            </a>
           </li>
           <li class="nav-item my-auto ms-3 ms-lg-5">
             <a href="javascript:;" class="btn btn-outline-primary mb-0 me-1 mt-2 mt-md-0 navlast">USFK U+ <img src="../assets/img/icon_u+login.png" alt="" /></a>
