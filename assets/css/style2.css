@@ -11,12 +11,12 @@
 .btn.btn-outline-secondary {background: #fff;}
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; opacity: 1;}
 .btn-tooltip {width: 16px; height: 16px; padding: 0; margin: 0;}
-.ico-tooltip {display: inline-block; width: 16px; height: 16px; padding: 0; background: url('../img/icon_question.png') 0 0 no-repeat;}
+.ico-tooltip {display: inline-block; width: 16px; height: 16px; padding: 0; background: url('../img/icon_question.svg') 0 0 no-repeat;}
 .btn-delete,
 .btn-pwd-toggle {width: 24px; height: 24px; padding: 0; margin: 0;}
-.ico-delete {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_delete.png') 0 0 no-repeat;}
-.ico-eye-on {display: none; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_on.png') 0 0 no-repeat;}
-.ico-eye-off {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_off.png') 0 0 no-repeat;}
+.ico-delete {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_delete.svg') 0 0 no-repeat;}
+.ico-eye-on {display: none; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_on.svg') 0 0 no-repeat;}
+.ico-eye-off {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_eye_off.svg') 0 0 no-repeat;}
 .btn-pwd-toggle.on .ico-eye-on {display: inline-block;}
 .btn-pwd-toggle.on .ico-eye-off {display: none;}
 
@@ -24,9 +24,9 @@
 .required label {position: relative;}
 .required label::after {content:'*'; color: #FF5151; padding: 0 3px;}
 .desc1.valid {color: #00AA02;}
-.desc1.valid .desc1info::before {background: url('../img/icon_success.png') 0 0 no-repeat;}
+.desc1.valid .desc1info::before {background: url('../img/icon_success.svg') 0 0 no-repeat;}
 .desc1.invalid {color: #F94E4E;}
-.desc1.invalid .desc1info::before {background: url('../img/icon_error.png') 0 0 no-repeat;}
+.desc1.invalid .desc1info::before {background: url('../img/icon_error.svg') 0 0 no-repeat;}
 
 .input-group {position: relative;}
 .input-group .input-btn-group {position: absolute; right: 1.5rem; bottom: 17px; display: flex; align-items: center; gap: 10px;} 
@@ -41,8 +41,8 @@
 .form-check {display: inline-flex; align-items: center; margin-bottom: 0;}
 .form-check:not(.form-switch) .form-check-input[type="checkbox"] {width: 24px; height: 24px; border-radius: 50%; margin-top: 0; border: 0;}
 .form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {background: transparent;}
-.form-check:not(.form-switch) .form-check-input[type="checkbox"]:after {content:''; background: url('../img/check_default.png') 0 0 no-repeat; opacity: 1; transition: all 0.2s;}
-.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked:after {background: url('../img/check_checked.png') 0 0 no-repeat;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:after {content:''; background: url('../img/check_default.svg') 0 0 no-repeat; opacity: 1; transition: all 0.2s;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked:after {background: url('../img/check_checked.svg') 0 0 no-repeat;}
 
 /* button select */
 .btn-sel {postion:relative; display: inline-flex; align-items: center; justify-content: space-between; width: 100%; height: 59.5px; padding: 17px 0 17px; color: #CACCD2; text-align: left; font-size: 20px;}
