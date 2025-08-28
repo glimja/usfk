@@ -6,6 +6,8 @@
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {color: #CACCD2; background-color:#E5E7EA; }
 .btn-tooltip {width: 16px; height: 16px; padding: 0; margin: 0;}
 .ico-tooltip {display: inline-block; width: 16px; height: 16px; padding: 0; background: url('../img/icon_question.png') 0 0 no-repeat;}
+.btn-delete {width: 24px; height: 24px; padding: 0; margin: 0;}
+.ico-delete {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_delete.png') 0 0 no-repeat;}
 
 /* input */
 .required label {position: relative;}
@@ -15,4 +17,24 @@
 .desc1.invalid {color: #F94E4E;}
 .desc1.invalid .desc1info::before {background: url('../img/icon_error.png') 0 0 no-repeat;}
 
-.fs-14 {font-size: 0.9rem;}
+.input-group {position: relative;}
+.input-group .input-btn-group {position: absolute; right: 1.5rem; bottom: 17px; display: flex; align-items: center; gap: 10px;} 
+.input-group.input-group-static .form-control,
+.input-group.input-group-static .form-control:focus
+{background-image: linear-gradient(0deg, #E6007E 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0);}
+.input-group.input-group-static .form-control.success {background-image: linear-gradient(0deg, #00AA02 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0); background-size: 100% 100%, 100% 100%;}
+.input-group.input-group-static .form-control.error {background-image: linear-gradient(0deg, #F94E4E  2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #E9EBF0 1px, rgba(209, 209, 209, 0) 0); background-size: 100% 100%, 100% 100%;}
+/* checkbox */
+.form-check-label {margin-left: 10px;margin-bottom: 0; color: #4D5461;}
+.form-check {display: inline-flex; align-items: center; margin-bottom: 0;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"] {width: 24px; height: 24px; border-radius: 50%; margin-top: 0; border: 0;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {background: transparent;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:after {content:''; background: url('../img/check_default.png') 0 0 no-repeat; opacity: 1; transition: all 0.2s;}
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked:after {background: url('../img/check_checked.png') 0 0 no-repeat;}
+
+.noticebox p {margin-bottom: 8px; color: #4d5461; font-size: 14px; font-weight: 500; line-height: 120%;}
+.noticebox .point-list {padding-left: 12px;}
+.noticebox .point-list li {list-style: none; position: relative; padding-left: 10px; color: #828591; font-size: 14px; line-height: 120&}
+.noticebox .point-list li::before {content:'-';display: block; position: absolute; left: 0; top: 0;}
+
+.fs-14 {font-size: 0.9rem;}     
