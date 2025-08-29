@@ -47,8 +47,8 @@
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 80vw;
-    /* max-width: 976px; */
+    /* max-width: 80vw; */
+    max-width: 976px;
   }
 }
 
