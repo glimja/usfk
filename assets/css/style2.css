@@ -2,6 +2,7 @@
 @import url("style.css");
 
 .fs-14 {font-size: 0.9rem;}
+.navbar-toggler {margin-left: auto !important;}
 
 /* button */
 .page-btn {display: flex; align-items: center; justify-content: center;}
@@ -87,6 +88,9 @@
 br.mo_br {display: none;}
 .main .inner {display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .main ul, .main ul, li {list-style: none;}
+/* main navbar */
+.navbar .navbar-main {display: flex; align-items: center; justify-content: space-between; width: 100%;}
+.navbar .navbar-main .btn {margin-left: auto; display: inline-flex; align-items: center; height: 45px; color: #4D5461; font-size: 16px; font-weight: 500; border-color: #D6D7DE;}
 /* sec1 */
 .section-hero .inner {position: relative; padding-left: 84px; width: 100%; min-height: 400px; border-radius: 62px; background: #E6007E url('../img/img_main_visual_pc.png') no-repeat right bottom;}
 .section-hero .hero-text {width: 100%;}
@@ -137,6 +141,8 @@ br.mo_br {display: none;}
 .section-cta .btn-line {display: inline-flex; align-items: center; justify-content: center; width: 216px; height: 60px; border-radius: 40px; border: 2px solid #E9EBF0; color: #fff; font-size: 22px; font-weight: 700;}
 
 @media (max-width: 1024px) {
+  .navbar .navbar-main .navbar-brand img {height: 20px;}
+  .navbar .navbar-main .btn {padding: 8px 12px; height: 33px; font-size: 14px;}
   /* sec1 */
   .section-hero .inner {min-height: 304px; padding-left: 66px; border-radius: 40px; background-size: 400px;}
   .section-hero .hero-text .hero-subtit {margin: 12px 0 28px; font-size: 16px; font-weight: 500;}
@@ -217,6 +223,9 @@ br.mo_br {display: none;}
 .page-tit .tit {margin-bottom: 0; color: #1F2125; font-size: 30px; font-weight: 700;line-height: 120%; letter-spacing: -0.3px;}
 .page-tit .desc {margin-bottom: 0; color: #4D5461; font-size: 20px; font-weight: 500;
 line-height: 130%;}
+
+.myinfo_tit {font-size: 0.875rem; color: #828591}
+.myinfo_desc {font-size: 1rem; color: #1F2125; font-weight: 500; margin-bottom: 0;}
 
 @media (max-width: 1024px) {
   .login-tit {margin-bottom: 48px;}
