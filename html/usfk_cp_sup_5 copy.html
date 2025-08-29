@@ -11,6 +11,11 @@
   <link href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
   <link href="../assets/css/font.css" rel="stylesheet" />
   <link href="../assets/css/style2.css" rel="stylesheet" />
+
+  <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/ui.js" type="text/javascript"></script>
 </head>
 
 <body class="features-sections">
@@ -53,12 +58,17 @@
                 Full Acceptance Of Terms Of Use 
               </label>
             </div>
-            
+            <div class="form-check ps-0">
+              <input class="form-check-input mt-0 " id="checkuncheck_all" type="checkbox" value="" id="checkDefault0">
+              <label class="form-check-label txt1F2125 fw-medium " for="checkDefault0">
+                LG U+ Terms & Conditions
+              </label>
+            </div>
             <!-- accordian : Required Agreements -->
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed arrowrighttype" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">                    
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">                    
                     <div class="form-check ps-0">
                       <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefault2">
                       <label class="form-check-label txt1F2125 fw-medium" for="checkDefault2">
@@ -70,7 +80,8 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    
                     <div class="form-check ps-0">
                       <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefault3"> 
                       <label class="form-check-label txt1F2125 fw-medium" for="checkDefault3">
@@ -79,7 +90,7 @@
                     </div>
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body chkinchksub">
                     <div class="accordion accordion-flush" id="accordionsubExample">
                       <div class="accordion-item">
@@ -146,85 +157,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
-                    
-                    <div class="form-check ps-0">
-                      <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefault3"> 
-                      <label class="form-check-label txt1F2125 fw-medium" for="checkDefault3">
-                        Consent to the Collection and Use of Personal Information
-                      </label>
-                    </div>
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body chkinchksub">
-                    <div class="accordion accordion-flush" id="accordionsubExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesub1" aria-expanded="false" aria-controls="collapsesub1">
-                            <div class="form-check ps-0">
-                              <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefaultsub1">
-                              <label class="form-check-label" for="checkDefaultsub1">
-                                Consent to the Collection and Use of Personal Information
-                              </label>
-                            </div>
-                          </button>
-                        </h2>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesub2" aria-expanded="false" aria-controls="collapsesub2">
-                            <div class="form-check ps-0">
-                              <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefaultsub2">
-                              <label class="form-check-label" for="checkDefaultsub2">
-                                Consent to collect and use personal information(Required)
-                              </label>
-                            </div>
-                          </button>
-                        </h2>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesub3" aria-expanded="false" aria-controls="collapsesub3">
-                            <div class="form-check ps-0">
-                              <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefaultsub3">
-                              <label class="form-check-label" for="checkDefaultsub3">
-                                Consent to collect and use location information(Required)
-                              </label>
-                            </div>
-                          </button>
-                        </h2>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesub5" aria-expanded="false" aria-controls="collapsesub5">
-                            <div class="form-check ps-0">
-                              <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefaultsub5">
-                              <label class="form-check-label" for="checkDefaultsub5">
-                                Consent to provide personal information to third parties(Required)
-                              </label>
-                            </div>
-                          </button>
-                        </h2>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesub4" aria-expanded="false" aria-controls="collapsesub4">
-                            <div class="form-check ps-0">
-                              <input class="form-check-input mt-0" type="checkbox" value="" id="checkDefaultsub4">
-                              <label class="form-check-label" for="checkDefaultsub4">
-                                Consent to collect and use information for customer benefits and agreement to receive benefits/advertisements(Optional)
-                              </label>
-                            </div>
-                          </button>
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
             <!-- //accordian : Required Agreements -->
           </div>
@@ -237,10 +169,7 @@
   </div>
   <!-- END Container -->
   
-
   <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../../assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
-  <script src="../../assets/js/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="../../assets/js/ui.js" type="text/javascript"></script>
-  </body>
+</body>
+
 </html>
