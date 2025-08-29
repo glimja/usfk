@@ -23,7 +23,7 @@
         </a>
         <h1 class="col-lg-12 mx-auto text-center ">
           <span class="mb-0 toptit">
-            팝업
+            Carrier 팝업
           </span>
         </h1>
       </div>
@@ -40,30 +40,40 @@
 
   <div class="container mt-5">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      중앙 팝업
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      바텀시트 팝업
     </button>
-    
+
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal fade bottomsheetpop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
         <div class="modal-content w-100 mx-auto">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 w-100 text-center" id="staticBackdropLabel">Wireless Service</h1>
+            <h1 class="modal-title fs-5 w-100" id="staticBackdropLabel">Carrier</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body w-100 text-center">
-            Do you want to Sign up?
+          <div class="modal-body w-100 text-center scroll" style="height: 300px">
+            <div class="my-2 text-start">
+              <ul class="list-group type1">
+                <li class="list-group-item"><a href="javascript:;">LG U+</a></li>
+                <li class="list-group-item"><a href="javascript:;">US</a></li>
+                <li class="list-group-item"><a href="javascript:;">KT</a></li>
+                <li class="list-group-item"><a href="javascript:;">SKT</a></li>
+                <li class="list-group-item"><a href="javascript:;">NONE</a></li>
+              </ul>
+            </div>
           </div>
+
+          <!--           
           <div class="modal-footer w-100">
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
             <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">OK</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
-  
+
   <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 </body>
 

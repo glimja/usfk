@@ -1,5 +1,6 @@
 $(function(){
 
+    // wireless PC GNB 2depth
     fn__topmenuover();
     function fn__topmenuover() {        
         let $target = $(".navbar-expand-lg .navbar-nav .nav-item");
@@ -16,4 +17,14 @@ $(function(){
     }
 
 
+
+    $("#checkuncheck_all").on('click', function(){
+        // 클릭 되었을때
+        if($("#checkuncheck_all").prop('checked')){
+            $(".form-check.wrapchkedall").css("border-color","#E6007E")
+        // 클릭 안 되었을때
+        } else{
+            $(".form-check.wrapchkedall").css("border-color","#E9EBF0")
+        }
+    });
 });
