@@ -48,18 +48,26 @@
           </div>
           <div class="container py-4">
             <div class="row">
-              <div class="input-group input-group-static required">
-                <label for="">Upload Photo ID</label>
-                <input type="file" class="form-control" id="">
+              <div class="input-group input-group-static file-ipt">
+                <div class="label-wrap">
+                  <span class="label-txt">Upload Photo ID</span>
+                  <span>File Size Limit: 5MB</span>
+                </div>
+                <input type="text" class="form-control" id="file-name" placeholder="No file uploaded" readonly>
+                <input type="file" class="form-control" id="file" accept="image/*">
+                <div class="input-btn-group">
+                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0" id="file-btn">Attach Photo</button>
+                </div>
               </div>
-                          
-              <div class="col-lg-12 mx-auto mt-3">
-                <div class="noticebox">
-                  <p class="caution-txt">You may also submit your ID at a LG U+Shop</p>
+              
+              <div class="col-lg-12 mx-auto mt-4">
+                <span class="label-txt">Sample Image (for reference)</span>
+                <div class="img-id">
+                  <img src="../assets/img/img_sample_idcard.jpg" alt="">
                 </div>
               </div>
 
-              <div class="col-lg-12 mx-auto mt-3">
+              <div class="col-lg-12 mx-auto mt-4">
                 <div class="noticebox">
                   <p class="caution-txt">You may also submit your ID at a LG U+Shop</p> 
                 </div>
@@ -70,13 +78,31 @@
         </section>
       </div>
       <div class="col-lg-8 mx-auto fixed-bottom page-btn">
-        <button type="button" class="btn btn-primary w-100 mx-auto" disabled>Next</button>
+        <button type="button" class="btn btn-primary w-100 mx-auto">Next</button>
       </div>
     </div>
   </div>
   <!-- END Container -->
   
   <script src="../../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script>
+    const fileInput = document.getElementById("file");
+    const fileNameInput = document.getElementById("file-name");
+    const fileBtn = document.getElementById("file-btn");
+
+    fileBtn.addEventListener("click", () => {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener("change", () => {
+      if (fileInput.files.length > 0) {
+        fileNameInput.value = fileInput.files[0].name;
+      } else {
+        fileNameInput.value = "";
+        fileNameInput.placeholder = "No file uploaded";
+      }
+    });
+  </script>
 </body>
 
 </html>
