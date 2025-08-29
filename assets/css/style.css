@@ -160,18 +160,15 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .chkallbox .chkinchksub .form-check-label {width: 100%; padding-left: 0; padding-right: 20px; color: #4D5461;font-size: 0.875rem; font-weight: 400;}
 .accordion-body.chkinchksub {padding: 0}
 .chkallbox > .form-check.rightarrow::after {content:''; margin: 10px 6px 10px 20px; margin-left: auto; background: url('../img/icon_rightarrow.svg') 0 0 no-repeat; background-size: 100%;}
-
-
-
-
-
-
 .form-check.wrapchkedall {margin-bottom: 12px;}
 .list-group.type1 .list-group-item {border:0; padding: 8px 0; margin-top: 20px; font-size: 1.125rem; color: #1F2125;}
 .list-group.type1 li:first-child {margin-top: 0;}
 .list-group.type1 li a {display: block;}
-
 .list-group.list-group-numbered.type2 .list-group-item {border: 0; text-align: left; padding: 3px 3px 3px 12px; font-size: 1rem; color: #4D5461; font-weight: 400;}
+.btn-righticon {width: 24px; height: 24px; padding: 0; margin: 0;}
+.icon-calendar {display: inline-block; width: 24px; height: 24px; padding: 0; background: url('../img/icon_calendar.svg') 0 0 no-repeat;}
+
+
 /* 팝업 */
 .modal .modal-content {border-radius: 20px; border: 0;}
 .modal .modal-header {padding-top: 24px; border-bottom: 0;}
