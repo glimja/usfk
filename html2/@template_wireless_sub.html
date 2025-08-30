@@ -21,9 +21,9 @@
         <a class="navbar-brand" href="javascript:;" target="_blank">
           <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
         </a>
-        <h1 class="col-lg-12 mx-auto text-center ">
+        <h1 class="col-lg-12 mx-auto ">
           <span class="mb-0 toptit">
-            Wireless Service
+            Edit Customer Info
           </span>
         </h1>
       </div>
@@ -39,38 +39,105 @@
   </div>
 
   <!-- START Container -->
-  <div class="container mt-5 mb-5">
+  <div class="container mt-5 mb-7">
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <section>
-          <img src="../assets/img/icon_wifi.png" alt="" class="titwifi" />
-          <h2 class="h2tit underline">Air Lite <span class="desctit">(Up to 200M)</span></h2>
-          <div class="container py-4">
-            <div class="row">
+          <div class="row">
+            <div class="page-tit">
+              <h2 class="tit">Update Information</h2>
+              <p class="desc">Edit your details and tap Save.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group input-group-static">
+              <label for="">User ID</label>
+              <input type="text" class="form-control" id="" placeholder="Enter your user ID" value="markevans02" readonly>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-6">
               <div class="input-group input-group-static">
-                <label for="">Desired Activation Date</label>
-                <input type="text" class="form-control" id="" placeholder="MM-DD-YY">
+                <label for="">First Name</label>
+                <input type="text" class="form-control" id="" placeholder="Enter your first name" value="Mark" readonly>
               </div>
-              <div class="input-group input-group-static mt-4">
-                <label for="">Estimated Price</label>
-                <input type="text" class="form-control" id="" placeholder="Prorated amount">
+            </div>
+            <div class="col-6">
+              <div class="input-group input-group-static">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control" id="" placeholder="Enter your last name" value="Evans" readonly>
               </div>
-              <div class="desc1 mt-1"><span class="desc1info"></span>A prorated charge from the activation date to month-end will be billed upon activation.</div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static">
+              <label for="">Date Of Birth</label>
+              <input type="text" class="form-control" id="" placeholder="" value="Aug-20-2025" readonly>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static required">
+              <label for="">Mobile Phone Number</label>
+              <input type="text" class="form-control" id="" placeholder="" value="Aug-20-2025" required>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static required">
+              <label for="">Email</label>
+              <input type="text" class="form-control" id="" placeholder="" value="Mmarkv8802@email.com" required>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static required">
+              <label for="">Military Rank</label>
+              <button class="form-control btn-sel" data-pop-btn="">
+                <!-- <span class="place-holder">Choose you rank</span> -->
+                <span class="val">E2</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static required">
+              <label for="">Korea Departure Date (PCS)</label>
+              <input type="text" class="form-control" id="" placeholder="" value="Osan AB" required>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-6">
+              <div class="input-group input-group-static required">
+                <label for="">Building Number</label>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <!-- <span class="place-holder">Choose your building Number</span> -->
+                  <span class="val">1014</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="input-group input-group-static required">
+                <label for="">Room Number</label>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <!-- <span class="place-holder">Choose your Room Number</span> -->
+                  <span class="val">A</span>
+                </button>
+              </div>
             </div>
           </div>
         </section>
-
-        <div class="col-lg-12 mx-auto mt-3">
-          <section class="wrapboxinfo1">
-            <div class="boxinfo1">
-              <h3 class="h3tit">Need Looking to connect to the better service?</h3>
-              <ul class="list">
-                <li><img src="../assets/img/icon_num1.png" alt="" /> Exit this page.</li>
-                <li><img src="../assets/img/icon_num2.png" alt="" /> On your device, go to WiFi settings.</li>
-                <li><img src="../assets/img/icon_num3.png" alt="" /> From the list of networks, Select <strong class="pointcolor">'LGU_AirMax_1G'.</strong></li>
-              </ul>
-            </div>
-          </section>
+        <div class="d-flex mt-5">
+          <div class="col-3">
+            <button type="button" class="btn btn-lg btn-outline-secondary mb-0 w-100">Cancel</button>
+          </div>
+          <div class="col-9 ps-2">
+            <button type="button" class="btn btn-lg btn-primary mb-0 w-100">Save</button>
+          </div>
         </div>
       </div>
     </div>
