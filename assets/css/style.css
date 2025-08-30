@@ -82,7 +82,7 @@
 }
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {--bs-gutter-x: 0;}
 .navbar {box-shadow: none;border-bottom: 1px solid #E9EBF0; padding: 0 1.25rem; height: 66px;}
-.navbar .container {max-width: 100%;}
+/* .navbar .container {max-width: 100%;} pc 화면 안됨 - 확인후 삭제필요 */
 .navbar .navbar-brand {position: absolute; z-index: 1;}
 .navbar h1 {display: flex; align-items: center; justify-content: center; margin: 0;}
 .footer {background: #000;}
@@ -185,8 +185,14 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .modal.show.bottomsheetpop .modal-dialog {padding: 0; transform: none;}
 .bottomsheetpop .modal-content {border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
 .modal .modal-body.scroll {overflow-y: scroll;}
-/* wireless internet */
-.btn.navlast {font-size: 1rem; border-radius: 50px; display: flex;padding: 8px 12px;justify-content: flex-end;align-items: center;gap: 5px;}
+
+/* 
+ * Wireless Internet 
+ */
+.wireless-sections {}
+.wireless-sections .navbar {height: 81px;}
+/* .wireless-sections .navbar-nav {padding: 26px 0 15px;} */
+.btn.navlast {font-size: 1rem; border-radius: 50px; display: flex;padding: 6px 12px;justify-content: flex-end;align-items: center;gap: 5px;}
 .wraptopmenu {display: block; padding: 8px 0;background-color: #EEE;}
 .topmenu {display: flex; justify-content: flex-end; width: 100%;}
 .topmenu a {padding: 0 12px; color: #828591; font-size: 0.835rem}
@@ -195,13 +201,18 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .depth2area.active {display: block; background-color: #fff; border-bottom: 1px solid #EFF0F5;}
 .dropdown>.dropdown-menu.depth2menu .d-lg-block, .dropdown .dropdown-menu.depth2menu .d-lg-block,
 .dropdown.dropdown-hover:hover>.dropdown-menu.depth2menu .d-lg-block, .dropdown .dropdown-menu.show.depth2menu .d-lg-block {display: flex !important;}
-.dropdown.dropdown-hover:hover>.dropdown-menu.depth2menu, .dropdown>.dropdown-menu.depth2menu {display:block; width: 50vw; left: -150px !important; background: transparent; box-shadow: none; margin-top: 59px !important; transform: none !important;}
+.dropdown.dropdown-hover:hover>.dropdown-menu.depth2menu, .dropdown>.dropdown-menu.depth2menu {display:block; left: -150px !important; background: transparent; box-shadow: none; margin-top: 56px !important; transform: none !important;}
 .dropdown>.dropdown-menu:before, .dropdown .dropdown-menu:before,
 .dropdown.dropdown-hover:hover>.dropdown-menu:before, .dropdown .dropdown-menu.show:before {display: none;}
 .dropdown-item {width: auto; font-size: 1.125rem; font-weight: 400; color: #828591; padding: 9px 24px;transition: none; outline: none;}
-.dropdown-item:hover, .dropdown-item:focus {font-weight: 500; color: #1F2125; border-bottom: 2px solid #262C36; border-radius: 0; }
+.dropdown-item:hover, .dropdown-item:focus {font-weight: 500; color: #1F2125; border-bottom: 2px solid #262C36; border-radius: 0; background-color: initial;}
+.dropdown-item.active, .dropdown-item:active
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {color: #E6007E; font-weight: 500;}
-.navbar .nav-item.active .nav-link {color: #E6007E; cursor: pointer;}
+.navbar-nav li.dropdown:nth-last-child(-n+2):not(:last-child) .depth2menu {left: -220px !important}
+.navbar .nav-item {cursor: pointer;}
+.navbar .nav-item.active .nav-link {color: #E6007E; }
+.navbar .nav-link,
+.navbar .nav-item.active .nav-link {font-weight: 500;}
 .list-group.wraplisttype1 .list-group-item {padding: 0}
 .listlinetype1 {display: flex; color: #1F2125; font-size: 0.875rem; margin:0;}
 .listlinetype1 .tit {width: 45%; padding: 12px 16px; background-color: #FAFCFF; border-right: 1px solid #EFF0F5;}
@@ -214,23 +225,25 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 }
 
 
-    .navbar-collapse {
-        position: absolute;
-        top: 54px;
-        left: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.4s ease;
-        display: block;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-left: 50%;
-        left: 50%;
-        transition: all 0.2s ease;
-    }
-    .navbar-collapse.show {
-        left: 0;
-    }
+@media (max-width: 769px) {
+  /* .wireless-sections .navbar-collapse {
+      position: fixed;
+      top: 54px;
+      left: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+      transition: all 0.4s ease;
+      display: block;
+  }
+  .wireless-sections .navbar-collapse.collapsing {
+      height: auto !important;
+      margin-left: 50%;
+      left: 50%;
+      transition: all 0.2s ease;
+  }
+  .wireless-sections .navbar-collapse.show {
+      left: 0;
+  } */
+}
