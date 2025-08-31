@@ -14,7 +14,8 @@
 @media (min-width: 576px) {
   .container,
   .container-sm {
-    max-width: 80vw;
+    max-width: 95vw;
+    /* max-width: 80vw; */
     /* max-width: 540px; */
   }
   .container.toparea {max-width: 100%;}
@@ -28,7 +29,8 @@
   .container,
   .container-sm,
   .container-md {
-    max-width: 80vw;
+    max-width: 95vw;
+    /* max-width: 80vw; */
     /* max-width: 720px; */
   }
   .container.toparea {max-width: 100%;}
@@ -41,7 +43,8 @@
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 80vw;
+    max-width: 95vw;
+    /* max-width: 80vw; */
     /* max-width: 976px; */
   }
   .modal-dialog {max-width: 440px;}
@@ -96,7 +99,8 @@
 .footer .wrapinfo .infolist .desc .subtit {font-weight: 500;}
 .wrapcopyrights {font-size: 0.835rem; padding: 1.5rem 0; border-top: 1px solid rgba(233, 235, 240, 0.20);}
 .text-secondary {color: #828591 !important;}
-.navbar-nav .btn-outline-secondary {border-color: #E9EBF0;}
+.navbar-nav .btn-outline-secondary,
+.btncplogin {border-color: #E9EBF0;}
 .navbar .toptit {font-size: 1.25rem; font-weight: 500; color: #1F2125; letter-spacing: -0.4px;}
 .stepbar {display: flex; flex-wrap: wrap; gap: 8px;}
 .stepbar .col {width:20%; height: 4px; gap:2px; background: #EFF0F5;}
@@ -192,7 +196,8 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 /* 
  * Wireless Internet 
  */
-.wireless-sections {}
+.wireless-sections {overflow: initial;}
+.wireless-sections.active {overflow: hidden;}
 .wireless-sections .navbar {height: 81px;}
 .wireless-sections .navbar h1 {justify-content: flex-start; padding-left: 45px;}
 .btn.navlast {font-size: 1rem; border-radius: 50px; display: flex;padding: 6px 12px;justify-content: flex-end;align-items: center;gap: 5px;}
@@ -228,27 +233,21 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .pcblock {display: block;}
 @media (max-width: 992px) {
   .wraptopmenu {display: none;}
-}
+/* }
 
 
-@media (max-width: 769px) {
+@media (max-width: 769px) { */
   .mobileblock {display: block;}
   .pcblock {display: none;}
-  .wireless-sections .navbar-collapse {
-      position: fixed; top: 0; left: 100%; width: 0; height: 100vh; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; width: 100%; transition: all 0.4s ease; overflow-y: scroll; 
-  }
-  .wireless-sections .navbar-collapse.collapsing {
-      height: auto !important; margin-left: 50%; left: 50%; transition: all 0.2s ease;
-  }
-  .wireless-sections .navbar-collapse.show {
-      left: 5%; top: 0; padding:0; margin:0; background: white; z-index: 99;
-  }
+  .wireless-sections .navbar-collapse {position: fixed; top: 0; left: 100%; width: 0; height: 100vh; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; width: 100%; transition: all 0.4s ease; overflow-y: scroll; }
+  .wireless-sections .navbar-collapse.collapsing {height: auto !important; margin-left: 50%; left: 50%; transition: all 0.2s ease;}
+  .wireless-sections .navbar-collapse.show { left: 0%; top: 0; padding:0; margin:0; background: white; z-index: 99;  }
   .btn.navlast {display: initial;}
-  .overlay {display: none; position: fixed;z-index: 99;top: 0;right: 0;bottom: 0;left: 0;cursor: wait;background: rgba(0, 0, 0, .5); transition: none;}
+  .overlay {display: none; min-height: 100vh; min-width: 100vw; position: fixed;z-index: 99;top: 0;right: 0;bottom: 0;left: 0;cursor: wait;background: rgba(0, 0, 0, .7); transition: none; -webkit-overflow-scrolling: touch;}
   .overlay.active {display: block;}
   .navbar-light .navbar-toggler {position: fixed; right: 10px; z-index: 999;}
-   .overlay.active {display: flex;}
-  .loginarea {display: flex; justify-content: space-between; align-items:center; margin-top: 78px; padding: 24px 20px; background-color: #F7F8FB; border-top: 1px solid #eee; font-size: 22px; font-weight: 600; color:#121215; line-height: 120%; letter-spacing: -0.44px;}
+  
+  .loginarea {display: flex; justify-content: space-between; align-items:center; margin-top: 66px; padding: 24px 20px; background-color: #F7F8FB; border-top: 1px solid #eee; font-size: 22px; font-weight: 600; color:#121215; line-height: 120%; letter-spacing: -0.44px;}
   .loginarea .desc {width: 60%;}
   .loginarea .desc .txt {display: block;}
   .loginarea .btnlogin {padding: 7px 26px; background: #262C36;}
@@ -265,5 +264,26 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
   .navdropdown .accordion-body .submenu a {display: block; padding: 5px 0}
   .navdropdown .mo_topmenu {}
   .navdropdown .mo_topmenu a {display: block; padding: 8px 0; font-size: 18px; font-weight: 500; color: #4D5461}
-  .navbar .navbar-brand {position: absolute; z-index: 1;}
+  .navbar .navbar-brand img {height: 20px;}
+  .navhome {position: fixed; right: 55px;}
+  .navbar-toggler .navbar-toggler-icon {margin-top: 12px;}
+  .navbar-toggler .navbar-toggler-icon .navbar-toggler-bar {width: 16px; background: #262C36;}
+  .navbar-toggler .navbar-toggler-icon .navbar-toggler-bar.bar2, .navbar-toggler .navbar-toggler-icon .navbar-toggler-bar.bar3 {margin-top: 6px;}
+  .wireless-sections .navbar {height: 66px;}
+  .wireless-sections .navbar>.container, .wireless-sections .navbar>.container-fluid, .wireless-sections .navbar>.container-sm, .wireless-sections .navbar>.container-md, .wireless-sections .navbar>.container-lg, .wireless-sections .navbar>.container-xl, .wireless-sections .navbar>.container-xxl {justify-content: flex-start;}
+  .wireless-sections .navbar h1 {justify-content: flex-start; padding-left: 0px;}
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-bar.bar3 {margin-top: 1px;}
+}
+@media (min-width: 576px) {
+  /* .wireless-sections .navbar-collapse.show { left: 20%;} */
+}
+@media (min-width: 769px) {
+  .wireless-sections .navbar-collapse.show {left: 41%;}
+  .loginarea,
+  .specialmenu,
+  .navdropdown {width: 60%;}
+}
+
+@media (min-width: 992px) {
+  /* .wireless-sections .navbar-collapse.show { left: 50%;} */
 }
