@@ -769,8 +769,10 @@ progress {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: 0;
+  padding-left: 0;
+  /* padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5); */
   margin-top: var(--bs-gutter-y);
 }
 
@@ -25819,7 +25821,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 
 .table td,
 .table th {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .table.align-items-center td,
