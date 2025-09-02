@@ -17,26 +17,19 @@
   <div class="overlay" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"></div>
   <div class="container">
     <!-- START Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="javascript:;" target="_blank">
           <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
         </a>
         <h1 class="col-lg-12 ps-2">
           <span class="mb-0 toptit">
-            Reactivate Account
+            Add Device
           </span>
         </h1>
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="row stepbar mx-auto">
-      <div class="col active"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>
-  </div>
 
   <!-- START Container -->
   <div class="container mt-5 mb-7">
@@ -45,53 +38,58 @@
         <section>
           <div class="row">
             <div class="page-tit">
-              <h2 class="tit">Service Information</h2>
+              <h2 class="tit">Add Device Information</h2>
             </div>
           </div>
 
           <div class="row">
-            <div class="input-group input-group-static required">
-              <label for="">Wireless Service Plan</label>
-              <ul class="service-plan">
-                <!-- 선택 시 li에 class active 추가 -->
-                <li class="active">
-                  <a href="#">
-                    <span>Air Lite</span>
-                  </a>
-                </li>
-                <li class="">
-                  <a href="#">
-                    <span>Air Max</span>
-                  </a>
-                </li>
-              </ul>
+            <div class="input-group input-group-static">
+              <label for="">Device MAC Address</label>
+              <input type="text" class="form-control" id="" placeholder="Only 'A~F', 'a~f', and '0~9' are allowed">
             </div>
           </div>
 
-          <div class="row mt-4">
-            <div class="input-group input-group-static required">
-              <label for="">Desired Activation Date</label>
-              <input type="text" class="form-control" id="" placeholder="MM-DD-YY" required>
-              <!-- calendar icon -->
-              <div class="input-btn-group">
-                <button type="button" class="btn btn-righticon">
-                  <i class="icon-calendar"></i>
-                </button>
+          <div class="row mt-2">
+            <div class="mt-2">
+              <div class="form-check ps-0">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault">
+                  Save as default MAC
+                </label>
               </div>
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="input-group input-group-static">
-              <label for="">Estimated Price</label>
-              <input type="text" class="form-control" id="" placeholder="Prorated amount" value="">
+              <label for="">Device Name</label>
+              <input type="text" class="form-control" id="" placeholder="Device name (e.g. John's Desktop)">
             </div>
           </div>
-          
-        </section>        
-      </div>
-      <div class="col-lg-8 mx-auto fixed-bottom page-btn">
-        <button type="button" class="btn btn-primary w-100 mx-auto" disabled>Next</button>
+
+          <div class="row mt-4">
+            <div class="input-group input-group-static">
+              <label for="">Device Type</label>
+            </div>
+            <ul class="device_list">
+              <!-- 선택 시 li에 active -->
+              <li class=""><a href="#">MOBILE/TABLET</a></li>
+              <li class=""><a href="#">PC/LAPTOP</a></li>
+              <li class=""><a href="#">GAME CONSOLE</a></li>
+              <li class=""><a href="#">ETC</a></li>
+            </ul>
+          </div>
+
+
+        </section>
+        <div class="d-flex mt-5 page-btn">
+          <div class="col-4">
+            <button type="button" class="btn btn-lg btn-outline-secondary mb-0 w-100">Cancel</button>
+          </div>
+          <div class="col-8 ps-2">
+            <button type="button" class="btn btn-lg btn-primary mb-0 w-100">Save</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

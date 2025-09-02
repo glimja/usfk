@@ -20,7 +20,7 @@
       <nav class="topmenu">
         <a href="javascript:;">Contact Us</a>
         <a href="javascript:;">Site map</a>
-      </nav>
+      </nav> 
     </div>
   </div>
   <!-- START Navbar -->
@@ -39,7 +39,7 @@
           </a>
           <h1 class="col-lg-12 ps-2">
             <span class="mb-0 toptit">
-              Edit Customer Info
+              Help Page
             </span>
           </h1>
           <a href="javascript:;" class="navhome"><img src="../assets/img/icon_tophome.svg" alt="" /></a>
@@ -282,99 +282,108 @@
   </div>
 
   <!-- START Container -->
-  <div class="container mb-5">
+  <div class="container mt-5 mb-7">
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <section>
           <div class="row">
             <div class="page-tit">
-              <h2 class="tit">Your account includes 3 devices</h2>
+              <h2 class="tit">How to register Mac addresses by device type</h2>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12">
-              <div class="device_box mobile">
-                <dl>
-                  <dt>
-                    <span class="device_code">00-1A-2B-3C-4D-5E</span>
-                    <span class="device_name">MOBILE/TABLET<strong class="pointcolor">Name</strong></span>
-                  </dt>
-                  <dd>
-                    <!-- <button type="button" class="btn btn-outline-secondary">Delete</button> -->
-                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                  </dd>
-                </dl>
+            <div class="accordion help_accordion" id="accordionDevice">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    1. Smartphone/ Tablets
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionDevice">
+                  <div class="accordion-body">
+                    1-1 iPhone / iPad
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                       <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+
+                    1-2. Galaxy Smartphones / Galaxy Tab
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                      <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+                    <p>text area test</p>
+                  </div>
+                </div>
               </div>
-              <div class="device_box pc">
-                <dl>
-                  <dt>
-                    <span class="device_code">00-1A-2B-3C-4D-5E</span>
-                    <span class="device_name">PC/LAPTOP<strong class="pointcolor">Name</strong></span>
-                  </dt>
-                  <dd>
-                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                  </dd>
-                </dl>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    2. Laptops
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionDevice">
+                  <div class="accordion-body">
+                    2-1 Mac
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                      <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+                  
+                    2-2. Window
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                      <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="device_box game">
-                <dl>
-                  <dt>
-                    <span class="device_code">00-1A-2B-3C-4D-5E</span>
-                    <span class="device_name">GAME CONSOLE</span>
-                  </dt>
-                  <dd>
-                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                  </dd>
-                </dl>
-              </div>
-              <div class="device_box etc">
-                <dl>
-                  <dt>
-                    <span class="device_code">00-1A-2B-3C-4D-5E</span>
-                    <span class="device_name">ETC</span>
-                  </dt>
-                  <dd>
-                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                  </dd>
-                </dl>
-              </div>
-              <div class="device_box empty">
-                <button type="button" class="btn btn_add">
-                  Add Your Devices
-                </button>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    3. Online Gaming Consoles
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionDevice">
+                  <div class="accordion-body">
+                    3-1. Xbox
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                      <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+                  
+                    3-2. PlayStation
+                    <div class="video_wrap">
+                      <!-- <video src="../assets/img/example.mp4" controls></video> -->
+                      <!-- play 시 버튼 class play 추가 -->
+                      <button type="button" class="btn_play">
+                        <i class="ico ico_play"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="row mt-4">
-            <div class="col-12">
-              <h3 class="icotit">Add device</h3>
-              <div class="device_box upgrade">
-                <dl>
-                  <dt>
-                    <div class="tit">
-                      Need More Devices?
-                      <p class="desc">You can add 2 devices.</p>
-                    </div>
-                    <div class="price">
-                      <b>$10</b><span>/Month</span>
-                    </div>
-                  </dt>
-                  <dd>
-                    <button type="button" class="btn btn-outline-primary">Upgrade</button>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-1">
-            <button type="button" class="btn btn-link text-decoration-underline fs-14">Cancellation</button>
-          </div>      
 
         </section>
         
