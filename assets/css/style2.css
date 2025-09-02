@@ -303,6 +303,7 @@ h3.icotit::before {content:''; display: block; width: 24px; height: 24px; backgr
 /* help accordion */
 .help_accordion .accordion-item {padding: 24px; border: 1px solid #E9EBF0; border-radius: 8px;}
 .help_accordion .accordion-item+.accordion-item {margin-top: 12px;}
+.help_accordion .accordion-item:has(.accordion-collapse.show) {border-color: #E6007E;}
 .help_accordion .accordion-button {position: relative; justify-content: space-between; padding: 0; color: #1F2125; font-size: 22px; font-weight: 500; line-height: 130%;}
 .help_accordion .accordion-button::after {width: 28px; height: 28px; margin: 0; background: url('../img/down-arrow-dark.svg') no-repeat center; transform: rotate(0); background-size: 14px 9px;}
 .help_accordion .accordion-button:not(.collapsed)::after {width: 28px;height: 28px; background: url('../img/down-arrow-dark.svg') no-repeat center; transform: rotate(180deg); background-size: 14px 9px;}
