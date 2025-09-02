@@ -50,5 +50,16 @@ $(function(){
             $(this).css("display","none")
         });
     }
+
+    // map 선택시 active
+    fn__mapactive();
+    function fn__mapactive() {
+        const target = $(".list_dot>li p");
+        target.on("click", function(){
+            console.log("11111111")
+            target.removeClass("active");
+            $(this).addClass("active");
+        });
+    }
     
 });
