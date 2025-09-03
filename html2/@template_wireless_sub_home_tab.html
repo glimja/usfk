@@ -26,10 +26,25 @@
   <!-- START Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <a class="navbar-brand" href="javascript:;" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
-        <img src="../assets/img/logo.png" alt="LGU+" />
-      </a>
-      <!-- <a href="javascript:;" class="navhome"><img src="../assets/img/icon_tophome.svg" alt="" /></a> -->
+      
+      <div class="pcblock">
+        <a class="navbar-brand" href="javascript:;" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+          <img src="../assets/img/logo.png" alt="LGU+" />
+        </a>
+      </div>
+      <div class="mobileblock">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="javascript:;" target="_blank">
+            <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
+          </a>
+          <h1 class="col-lg-12 ps-2">
+            <span class="mb-0 toptit">
+              Edit Customer Info
+            </span>
+          </h1>
+          <a href="javascript:;" class="navhome"><img src="../assets/img/icon_tophome.svg" alt="" /></a>
+        </div>
+      </div>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
           <span class="navbar-toggler-bar bar1"></span>
@@ -267,6 +282,38 @@
   </div>
 
   <!-- START Container -->
+  <!-- START Tab -->
+   <style>
+
+   </style>
+  <div class="row navtabscroll">
+    <ul class="nav nav-tabs cont-tabs" id="idpwTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="con1-tab" data-bs-toggle="tab" data-bs-target="#con1-tab-pane" type="button"
+          role="tab" aria-controls="con1-tab-pane" aria-selected="true">Tabmenu1</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="con2-tab" data-bs-toggle="tab" data-bs-target="#con2-tab-pane" type="button"
+          role="tab" aria-controls="con2-tab-pane" aria-selected="false">Tabmenu2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="con3-tab" data-bs-toggle="tab" data-bs-target="#con3-tab-pane" type="button"
+          role="tab" aria-controls="con3-tab-pane" aria-selected="false">Tabmenu3 Tabmenu3</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="idpwTabContent">
+      <div class="tab-pane fade show active" id="con1-tab-pane" role="tabpanel" aria-labelledby="id-tab" tabindex="0">
+        Tabmenu1 content
+      </div>
+      <div class="tab-pane fade" id="con2-tab-pane" role="tabpanel" aria-labelledby="con2-tab" tabindex="0">
+        Tabmenu2 content
+      </div>
+      <div class="tab-pane fade" id="con3-tab-pane" role="tabpanel" aria-labelledby="con3-tab" tabindex="0">
+        Tabmenu3 content
+      </div>
+    </div>
+  </div>
+  <!-- End Tab -->
   <div class="container mb-7 mt-5">
     <div class="row">
       <div class="col-lg-8 mx-auto">

@@ -56,7 +56,17 @@ $(function(){
     function fn__mapactive() {
         const target = $(".list_dot>li p");
         target.on("click", function(){
-            console.log("11111111")
+            target.removeClass("active");
+            $(this).addClass("active");
+        });
+    }
+
+    // select active
+    fn__selectchk();
+    function fn__selectchk(){
+        const target = $(".selectstyle .optitem");
+        target.on("click", function(){
+            console.log("111")
             target.removeClass("active");
             $(this).addClass("active");
         });
