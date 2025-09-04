@@ -36,8 +36,10 @@ $(function(){
     function fn__overlayChk() {
         const target = $(".navbar-light .navbar-toggler");
         const obj = $('.overlay');
+        const obj2 = $('.overlaybox');
         target.on("click", function(){
             obj.toggle("active");
+            obj2.toggle("active");
             $(".wireless-sections").toggleClass("active")
         })
     }
@@ -46,8 +48,11 @@ $(function(){
     fn__overlayremove()
     function fn__overlayremove() {
         const target = $(".overlay");
+        const obj2 = $('.overlaybox');
         target.on("click", function(){
-            $(this).css("display","none")
+            $(this).css("display","none");
+            obj2.css("display","none");
+            $(".wireless-sections").removeClass("active")
         });
     }
 

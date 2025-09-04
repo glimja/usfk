@@ -15,32 +15,40 @@
 
 <body class="wireless-sections">
   <div class="overlay" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"></div>
-  <div class="container">
-    <!-- START Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border0">
-      <div class="container">
-        <a class="navbar-brand" href="javascript:;" target="_blank">
-          <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
-        </a>
-        <h1 class="col-lg-12 ps-2">
-          <span class="mb-0 toptit">
-            Edit Customer Info
-          </span>
-        </h1>
+  <div class="container subtoptit">
+    <!-- START Navbar : 아래 border만 있을 경우 border-0 클래스 추가 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-0">
+      <!-- : 아래 border만 있을 경우 border-0 클래스 추가 -->
+      <div class="container border-0">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="javascript:;" target="_blank">
+            <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
+          </a>
+          <h1 class="col-lg-12 ps-2">
+            <span class="mb-0 toptit">
+              Edit Customer Info
+            </span>
+          </h1>
+          <!-- <a href="javascript:;" class="navhome"><img src="../assets/img/icon_tophome.svg" alt="" /></a> -->
+        </div>
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="row stepbar mx-auto">
-      <div class="col active"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
+    <!-- TOP 타이틀 라인만 있을 경우 d-none 클래스 추가 -->
+    <div class="container wrapstepbar">
+      <div class="row stepbar mx-auto">
+        <div class="col active"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
     </div>
+    <!-- //TOP 타이틀 라인만 있을 경우 삭제 -->
   </div>
 
   <!-- START Container -->
-  <div class="container mt-5 mb-7">
+  <div class="container contents">
     <div class="row">
       <div class="col-lg-8 mx-auto">
         <section>
