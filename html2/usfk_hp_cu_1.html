@@ -28,18 +28,19 @@
     <div class="container">
       
       <div class="pcblock">
-        <a class="navbar-brand" href="javascript:;" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="javascript:;" target="_blank">
           <img src="../assets/img/logo.png" alt="LGU+" />
         </a>
       </div>
       <div class="mobileblock">
+        <div class="overlaybox"></div>
         <div class="d-flex align-items-center">
           <a class="navbar-brand" href="javascript:;" target="_blank">
             <img src="../assets/img/arrowleft.png" alt="이전화면이동" />
           </a>
           <h1 class="col-lg-12 ps-2">
             <span class="mb-0 toptit">
-              Contact US
+              Edit Customer Info
             </span>
           </h1>
           <a href="javascript:;" class="navhome"><img src="../assets/img/icon_tophome.svg" alt="" /></a>
@@ -57,128 +58,132 @@
       <div class="collapse navbar-collapse w-100 " id="navigation">
         
         <div class="mobileblock">
-          <div class="loginarea">
-            <div class="desc">
-              <span class="txt">Log in to</span>
-              <span class="txt">view your plan</span>
-              <!--  
-              <span class="txt">Hello!</span>
-              <span class="txt pointcolor">Mark Evans</span>
-              -->
+          <!-- overlaymenubox -->
+          <div class="overlaymenubox">
+            <div class="loginarea">
+              <div class="desc">
+                <span class="txt">Log in to</span>
+                <span class="txt">view your plan</span>
+                <!--  
+                <span class="txt">Hello!</span>
+                <span class="txt pointcolor">Mark Evans</span>
+                -->
+              </div>
+              <button type="button" class="btn btn-dark btn-sm mb-0 btnlogin">Login</button>
             </div>
-            <button type="button" class="btn btn-dark btn-sm mb-0 btnlogin">Login</button>
-          </div>
-          <div class="specialmenu">
-            <ul>
-              <li>
-                <a href="javascript:;">
-                  <img src="../assets/img/icon_special1.svg" alt="" />
-                  <span>My Device</span>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="../assets/img/icon_special2.svg" alt="" />
-                  <span>Guide</span>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="../assets/img/icon_special3.svg" alt="" />
-                  <span>Mobile Support</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- tablet, mobile TOP 메뉴 : pc 안 보임 -->
-          <div class="navdropdown">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
-                    My Account
-                  </button>
-                </h2>
-                <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="submenu">
-                      <a href="javascript:;">Customer Info</a>
-                      <a href="javascript:;">Payment Info</a>
-                      <a href="javascript:;">Photo ID</a>
+            <div class="specialmenu">
+              <ul>
+                <li>
+                  <a href="javascript:;">
+                    <img src="../assets/img/icon_special1.svg" alt="" />
+                    <span>My Device</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="../assets/img/icon_special2.svg" alt="" />
+                    <span>Guide</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <img src="../assets/img/icon_special3.svg" alt="" />
+                    <span>Mobile Support</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- tablet, mobile TOP 메뉴 : pc 안 보임 -->
+            <div class="navdropdown">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                      My Account
+                    </button>
+                  </h2>
+                  <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="submenu">
+                        <a href="javascript:;">Customer Info</a>
+                        <a href="javascript:;">Payment Info</a>
+                        <a href="javascript:;">Photo ID</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                      My Service
+                    </button>
+                  </h2>
+                  <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="submenu">
+                        <a href="javascript:;">My Plan</a>
+                        <a href="javascript:;">My device</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                      Help Page
+                    </button>
+                  </h2>
+                  <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="submenu">
+                        <a href="javascript:;">Guide</a>
+                        <a href="javascript:;">FAQ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                      Service Highlights
+                    </button>
+                  </h2>
+                  <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="submenu">
+                        <a href="javascript:;">Service Features</a>
+                        <a href="javascript:;">LG U+ Shop</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                      News & Events
+                    </button>
+                  </h2>
+                  <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="submenu">
+                        <a href="javascript:;">News & Events</a>
+                        <a href="javascript:;">Privacy Policy History</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-                    My Service
-                  </button>
-                </h2>
-                <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="submenu">
-                      <a href="javascript:;">My Plan</a>
-                      <a href="javascript:;">My device</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-                    Help Page
-                  </button>
-                </h2>
-                <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="submenu">
-                      <a href="javascript:;">Guide</a>
-                      <a href="javascript:;">FAQ</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-                    Service Highlights
-                  </button>
-                </h2>
-                <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="submenu">
-                      <a href="javascript:;">Service Features</a>
-                      <a href="javascript:;">LG U+ Shop</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-                    News & Events
-                  </button>
-                </h2>
-                <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div class="submenu">
-                      <a href="javascript:;">News & Events</a>
-                      <a href="javascript:;">Privacy Policy History</a>
-                    </div>
-                  </div>
-                </div>
+              <nav class="mo_topmenu">
+                <a href="javascript:;">Contact Us</a>
+                <a href="javascript:;">Site map</a>
+              </nav>
+              
+              <div class="mt-3">
+                <a href="javascript:;" class="btn btn-outline-primary mb-0 me-1 mt-2 mt-md-0 navlast">USFK U+ <img src="../assets/img/icon_u+login.png" alt="" /></a>
               </div>
             </div>
-            <nav class="mo_topmenu">
-              <a href="javascript:;">Contact Us</a>
-              <a href="javascript:;">Site map</a>
-            </nav>
-            
-            <div class="mt-3">
-              <a href="javascript:;" class="btn btn-outline-primary mb-0 me-1 mt-2 mt-md-0 navlast">USFK U+ <img src="../assets/img/icon_u+login.png" alt="" /></a>
-            </div>
           </div>
+          <!-- //overlaymenubox -->
         </div>
 
         <!-- pc TOP 메뉴 : tablet, mobile 안보임 -->
@@ -282,7 +287,7 @@
   </div>
 
   <!-- START Container -->
-  <div class="container mb-7">
+  <div class="container contents">
     <div class="row">
       <div class="col-lg-9 mx-auto">
         <section>

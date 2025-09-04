@@ -374,7 +374,7 @@ transition: all 0.3s ease;
 .icon_main_online {display: inline-block; width: 32px; height: 32px; background: url("../img/icon_main_online.svg") 0 0 no-repeat; background-size: 100%;}
 .icon_main_usfkland {display: inline-block; width: 32px; height: 32px; background: url("../img/icon_main_usfkland.svg") 0 0 no-repeat; background-size: 100%;}
 
-
+.main2 {margin-top: 210px;}
 .section-top {}
 .section-top .specialmenuarea {position: relative; margin-top: -70px;z-index: 1;}
 .section-top .specialmenuarea .card.shadow-lg {border-radius: 12px;border: 1px solid #EFF0F5;box-shadow: 1px 1px 24px 0 rgba(188, 189, 194, 0.21) !important;}
@@ -426,7 +426,7 @@ transition: all 0.3s ease;
 .selectstyle .optitem.active {color: #E6007E;font-size: 18px;font-weight: 600;line-height: 120%;}
 .selectstyle .optitem.active::before {content:''; display: block; width: 24px; height: 24px; background: url("../img/icon_optionchk1.svg") 0 0 no-repeat; position: absolute; top: 0;right: 0;}
 
-.contents {margin-top: 200px; margin-bottom: 50px;}
+.contents {margin-top: 200px; margin-bottom: 80px;}
 .subtoptit .navbar {top: 0; left:0;}
 .subtoptit .navbar .container {padding: 21px 0; border-bottom: 1px solid #EFF0F5;}
 .subtoptit .stepbar {margin-top: 81px;}
@@ -519,8 +519,11 @@ transition: all 0.3s ease;
   .toptitfixed .navbar-brand {padding-right: 20px;}
   .toptitfixed h1 {display: contents; margin:0;line-height: 1;}
 
-  .contents {margin-top: 100px; margin-bottom: 50px;}
+  .contents {margin-top: 100px; margin-bottom: 80px;}
   .navtabscroll + .contents{margin-top: 150px;}
+  .main2 {margin-top: 110px;}
+  .overlaybox {display: none; }
+  .subtoptit .stepbar {margin-top: 66px;}
 }
 @media (max-width: 576px) {
   .wireless-sections .navbar-collapse.show {left: 0 !important;}
