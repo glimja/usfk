@@ -286,7 +286,7 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .tbltype .tbl_date {flex: 0.4; padding: 16px 8px;}
 .tbltype tbody tr {border-bottom: 1px solid #E9EBF0;}
 .tbltype tbody tr:first-child {border-top: 1px solid #E9EBF0;}
-.tbltype .tbltitdesc {overflow: hidden; display: inline-block; width: 320px; text-overflow: ellipsis; white-space:nowrap; font-size: 16px; font-weight: 500; color: #262C36;}
+.tbltype .tbltitdesc {overflow: hidden; display: inline-block; width: 320px; text-overflow: ellipsis; white-space:nowrap; font-size: 16px; font-weight: 500; color: #262C36; line-height: 1;}
 
 .area_map {padding: 0 0 30px;}
 .area_map .hb_tit18 {padding-bottom: 15px; border-bottom: 1px solid #E9EBF0;}
