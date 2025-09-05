@@ -28,7 +28,7 @@
         </a>
         <h1 class="col-lg-12 mx-auto text-center ">
           <span class="mb-0 toptit">
-            Calendar 팝업
+            Calendar 
           </span>
         </h1>
       </div>
@@ -43,97 +43,98 @@
     </div>
   </div>
 
-  <div class="container mt-5">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      바텀시트 팝업
-    </button>
-    <!-- Modal -->
-    <div class="modal fade bottomsheetpop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content w-100 mx-auto">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 w-100" id="staticBackdropLabel">Calendar</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <input type="text" id="Date" />
-
-          <div class="modal-footer w-100">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Done</button>
-          </div>
-        </div>
+  <div class="container py-4">
+    <div class="row">
+      <div class="input-group input-group-static required">
+        <label for="">Desired Activation Date</label>
+        <input type="text" id="dp00" class="form-control w-100 " placeholder="MMM-DD-YYYY" title="" />
+        <!-- <button type="button" class="ui-datepicker-trigger"><img src="../assets/img/icon_calendar.svg" alt="날짜 선택" title="날짜 선택"></button> -->
       </div>
+      <div class="input-group input-group-static mt-4">
+        <label for="">Estimated Price</label>
+        <input type="text" class="form-control" id="" placeholder="Prorated amount">
+      </div>
+      <div class="desc1 mt-1"><span class="desc1info"></span>A prorated charge from the activation date to month-end will be billed upon activation.</div>
     </div>
   </div>
 
 
-    <style>
-        /* jQuery UI ================================================== */
-        /* datepicker ========== */
-        .ui-datepicker {display:none; border:1px solid #DDD; border-radius:10px; background-color:#fff; padding:10px; -webkit-border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px;}
-        .ui-datepicker .ui-datepicker-header {position:relative; text-align:center; margin:0 0 10px 0; border: 0; background: #fff;}
-        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {border: 1px solid #e2e2e2;background-repeat:no-repeat; background-position:50% 50%; position:absolute; width:30px; height:30px; vertical-align:middle; text-indent:-9999em;}
-        .ui-datepicker .ui-datepicker-prev {left:0; background-image:url('https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_6.png');}
-        .ui-datepicker .ui-datepicker-next {right:0; background-image:url('https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_6.png');}
-        .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {background-image: none; text-indent:-9999rem;}
-        .ui-datepicker .ui-datepicker-title {margin:0 2.3em; line-height:1.8em; font-size:1.125rem; text-align:center;}
-        .ui-datepicker table {width:100%; border-collapse:collapse; font-size:0.8125rem; font-weight:normal; text-align:center;}
-        .ui-datepicker th {font-family:'Noto Sans KR'; font-weight:normal; padding:.7em .3em; border:0;}
-        .ui-datepicker td {border:0; padding:5px 0; text-align:center; font-weight:normal;}
-        .ui-datepicker th:first-child, .ui-datepicker td:first-child {padding-left:0;}
-        .ui-datepicker th:last-child, .ui-datepicker td:last-child {padding-right:0;}
-        .ui-datepicker td span, .ui-datepicker td a {display:inline-block; width:30px; height:30px; line-height:30px; cursor:pointer;}
-        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {border:0; background: #fff;text-align: center;}
-        .ui-state-active, .ui-widget-content .ui-state-active, .ui-state-highlight, .ui-widget-content .ui-state-highlight {border:0; background-color:#e2e2e2; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; color:#333; font-weight:bold;}
-        .ui-state-disabled, .ui-widget-content .ui-state-disabled {opacity:.5; filter:Alpha(Opacity=5);}
-        .ui-datepicker-trigger {display:inline-block; box-sizing:border-box; border-radius:4px; border:1px solid #DDD; background:#FFF url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/calendar.png") no-repeat center center; width:40px; height:40px; margin-left:5px; text-indent:-9999em; vertical-align:middle;}
-        /* 웹접근성 : 달력 레이어 팝업 2020.10 */
-        .ui-datepicker .ui-datepicker-title select {font-size: 18px; border:0; padding:0; margin-top: -4px; background:none}
-        .ui-datepicker .ui-datepicker-title .ui-datepicker-month {padding-left: 5px;}
-        .ui-datepicker-buttonpane {text-align: center}
-        .ui-datepicker-current {display:none}
-        .ui-datepicker-close {padding: 0 10px; border-radius: 10px;}
-    </style>
 
-    <script>
-        $(function() { 
-            // $( "#Date" ).datepicker({ }); 
+  <style>
+      /* jQuery UI ================================================== */
+      /* datepicker ========== */
+      .ui-datepicker {display:none; border:1px solid #DDD; border-radius:10px; background-color:#fff; padding:20px 10px; -webkit-border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px;}
+      .ui-datepicker .ui-datepicker-header {position:relative; text-align:center; margin:0 0 10px 0; border: 0; background: #fff;}
+      .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {border: 1px solid #e2e2e2;background-repeat:no-repeat; background-position:50% 50%; position:absolute; width:30px; height:30px; vertical-align:middle; text-indent:-9999em; cursor: pointer;}
+      .ui-datepicker .ui-datepicker-prev {left:0; background-image:url('../assets/img/iocn_prevarrow.svg');}
+      .ui-datepicker .ui-datepicker-next {right:0; background-image:url('../assets/img/iocn_nextarrow.svg');}
+      .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {background-image: none; text-indent:-9999rem;}
+      .ui-datepicker .ui-datepicker-title {margin:0 2.3em; line-height:1.8em; font-size:1.125rem; text-align:center;}
+      .ui-datepicker table {width:100%; border-collapse:collapse; font-size:18px; font-weight:400; text-align:center;}
+      .ui-datepicker th {font-family:'Pretendard'; font-weight:400; font-size: 14px; padding:.7em .3em; border:0;}
+      .ui-datepicker td {border:0; padding:4px 4px; text-align:center; font-weight:normal;}
+      .ui-datepicker th:first-child, .ui-datepicker td:first-child {padding-left:0;}
+      .ui-datepicker th:last-child, .ui-datepicker td:last-child {padding-right:0;}
+      .ui-datepicker td span, .ui-datepicker td a {display:inline-block; width:38px; height:38px; line-height:38px; cursor:pointer;}
+      .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: #fff;text-align: center;}
+      .ui-state-active, .ui-widget-content .ui-state-active, .ui-state-highlight, .ui-widget-content .ui-state-highlight {border:0; background-color:#e2e2e2; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; color:#333;}
+      .ui-state-disabled, .ui-widget-content .ui-state-disabled {opacity:.5; filter:Alpha(Opacity=5);}
+      .ui-datepicker-trigger {display:inline-block; box-sizing:border-box; border:1px solid transparent; background:#FFF url("../assets/img/icon_calendar.svg") no-repeat center center; width:40px; height:40px; margin-left:5px; text-indent:-9999em; vertical-align:middle; position: absolute; bottom: 8px; right: 0;}
+      .ui-datepicker .ui-datepicker-title select {font-size: 18px; border:0; padding:0; margin-top: -4px; background:none; cursor: pointer;}
+      .ui-datepicker .ui-datepicker-title .ui-datepicker-month {padding-left: 5px;}
+      .ui-datepicker-buttonpane {display: flex; flex-wrap: wrap; text-align: center}
+      .ui-datepicker-buttonpane button {flex: 1;}
+      .ui-datepicker-current {display:none}
+      .ui-datepicker-close {padding: 16px 20px; border-radius: 8px; border: 1px solid #D6D7DE; margin-top: 5px;}
+      .ui-datepicker-today {position: relative;}
+      .ui-datepicker-today::before {content:''; display: block; width: 3.5px; height: 3.5px; border-radius: 100%; background-color: #E6007E; position: absolute; left: 50%; bottom: 8px;}
+      .ui-state-default.ui-state-active {border: 1px solid #E6007E; background-color: #fff; color: #E6007E;}
+  </style>
 
-            $("#Date").datepicker({ 
-                showOn: "both", // 버튼과 텍스트 필드 모두 캘린더를 보여준다. 
-                buttonImage: "/application/db/jquery/images/calendar.gif", // 버튼 이미지 
-                buttonImageOnly: false, // 버튼에 있는 이미지만 표시한다. 
-                buttonText: "달력",
-                changeMonth: true, // 월을 바꿀수 있는 셀렉트 박스를 표시한다. 
-                changeYear: true, // 년을 바꿀 수 있는 셀렉트 박스를 표시한다. 
-                minDate: '-100y', // 현재날짜로부터 100년이전까지 년을 표시한다. 
-                nextText: '다음 달', // next 아이콘의 툴팁. 
-                prevText: '이전 달', // prev 아이콘의 툴팁. 
-                numberOfMonths: [1,1], // 한번에 얼마나 많은 월을 표시할것인가. [2,3] 일 경우, 2(행) x 3(열) = 6개의 월을 표시한다. 
-                stepMonths: 3, // next, prev 버튼을 클릭했을때 얼마나 많은 월을 이동하여 표시하는가. 
-                yearRange: 'c-100:c+10', // 년도 선택 셀렉트박스를 현재 년도에서 이전, 이후로 얼마의 범위를 표시할것인가. 
-                showButtonPanel: true, // 캘린더 하단에 버튼 패널을 표시한다. 
-                currentText: '오늘 날짜' , // 오늘 날짜로 이동하는 버튼 패널 
-                closeText: '닫기', // 닫기 버튼 패널 
-                dateFormat: "yy-mm-dd", // 텍스트 필드에 입력되는 날짜 형식. 
-                showAnim: "slide", //애니메이션을 적용한다. 
-                showMonthAfterYear: true , // 월, 년순의 셀렉트 박스를 년,월 순으로 바꿔준다. 
-                dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'], // 요일의 한글 형식. 
-                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] // 월의 한글 형식. 
-                // yearRange: "2010:2013" //연도 범위 
-            });
-            // $("#Date").datepicker().on('focus', function() {
-            //     $('.ui-datepicker-year').attr('title', '년도 선택');
-            //     $('.ui-datepicker-month').attr('title', '월 선택');
-            //     $('.ui-datepicker').attr('tabindex', '0');
-            //     $('.ui-datepicker').focus();
-            // });
+  <script>
+    $(function() { 
+        function setDatepicker(obj){
+          $.datepicker.setDefaults({
+              dateFormat: "mm-dd-yy", // 날짜표기 형식 : yy년mm월dd일
+              // yearSuffix: "년",
+              changeYear: true, // 콤보박스에서 년 선택 가능
+              changeMonth: true, // 콤보박스에서 월 선택 가능 
+              nextText: 'Next Month',
+              prevText: 'Prev Month',
+              // dayNames: ['Monday', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
+              dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+              // monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+              // monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+              showMonthAfterYear: true,// 상단 년, 월 설정
+              // minDate: '-0d',// 이전 날짜들은 선택막기 
+              altField: "#" + obj + "",
+              duration: "fast", // 달력 나타나는 속도, "slow", "normal", "fast"
+              // 하단 설정
+              showButtonPanel: true, // 비활성화
+              currentText: 'Today',
+              closeText: 'Cancel',
+              // 버튼 설정
+              showOn: "button",	// both, button, textField
+              buttonImage: "../assets/img/icon_calendar.svg",
+              buttonImageOnly: false,
+              buttonText: 'date select',
+              onClose: function (selectedDate) {
+                  $("#" + obj + "").attr('value', selectedDate);
+                  $('.ui-datepicker-trigger').focus();
+              }
+          });
+          $("#" + obj + "").datepicker().on('focus', function() {
+              $('.ui-datepicker-year').attr('title', '년도 선택');
+              $('.ui-datepicker-month').attr('title', '월 선택');
+              $('.ui-datepicker').attr('tabindex', '0');
+              $('.ui-datepicker').focus();
+          });
+        }
+        setDatepicker('dp00');
 
-        });
-    </script>
-
+    });
+  </script>
+    
 </body>
 
 </html>

@@ -163,7 +163,25 @@
               onClose: function (selectedDate) {
                   $("#" + obj + "").attr('value', selectedDate);
                   $('.ui-datepicker-trigger').focus();
-              }
+              },
+              onShow: function(event){
+                  console.log(`d0${idx} onShow`);
+                  // btn_init(idx);
+                  // $(`#farm${idx}_datepicker`).addClass('active');
+                  // var i_offset= $(`#farm${idx}_datepicker`).offset(); //클릭된 input의 위치값 체크
+                  // var width = $(`#farm${idx}_datepicker`).outerWidth();
+                  // var height = $("header").outerHeight();
+                  // console.log(`#farm${idx}_input:`,i_offset,"h:",height,"w",width);
+                  // $('.field.date').css({'top':(i_offset.top-height), 'left':(i_offset.left+width)});      
+              },
+              onSelect: function(event) { 
+                  console.log(`d0${idx} dateSelected`,event);
+                  // $(`#farm${idx}_datepicker`).val("날짜선택");
+                  // if(event){
+                  //     $(`#farm${idx}_date2`).text(event);
+                  //     $(`#farm${idx}_date1`).text(event);
+                  // }
+              },
           });
           $("#" + obj + "").datepicker().on('focus', function() {
               $('.ui-datepicker-year').attr('title', '년도 선택');

@@ -49,13 +49,13 @@
 
   <div class="container contents">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      바텀시트 팝업
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      중앙 팝업
     </button>
-
+    
     <!-- Modal -->
-    <div class="modal fade bottomsheetpop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
         <div class="modal-content w-100 mx-auto">
           <div class="modal-header">
             <h1 class="modal-title fs-5 w-100 text-center" id="staticBackdropLabel">
@@ -76,6 +76,7 @@
         </div>
       </div>
     </div>
+
   </div>
   
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
