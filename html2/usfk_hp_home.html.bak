@@ -283,7 +283,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="page-header mainslideheight" style="background-image: url('../assets/img/img_main_slidebg1.png');" loading="lazy">
+                <div class="page-header min-vh-41" style="background-image: url('../assets/img/img_main_slidebg1.png');" loading="lazy">
                   <div class="container">
                     <div class="row textwrap">
                       <div class="col-lg-9 my-auto">
@@ -296,7 +296,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="page-header mainslideheight" style="background-image: url('../assets/img/img_main_slidebg2.png');" loading="lazy">
+                <div class="page-header min-vh-41" style="background-image: url('../assets/img/img_main_slidebg2.png');" loading="lazy">
                   <div class="container">
                     <div class="row textwrap">
                       <div class="col-lg-9 my-auto">
@@ -309,7 +309,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="page-header mainslideheight" style="background-image: url('../assets/img/img_main_slidebg3.png');" loading="lazy">
+                <div class="page-header min-vh-41" style="background-image: url('../assets/img/img_main_slidebg3.png');" loading="lazy">
                   <div class="container">
                     <div class="row textwrap">
                       <div class="col-lg-9 my-auto">
@@ -322,12 +322,12 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="page-header mainslideheight" style="background-image: url('../assets/img/img_main_slidebg4.png');" loading="lazy">
+                <div class="page-header min-vh-41" style="background-image: url('../assets/img/img_main_slidebg4.png');" loading="lazy">
                   <div class="container">
                     <div class="row textwrap">
                       <div class="col-lg-9 my-auto">
                         <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Always on. Always protected</h4>
-                        <h1 class="text-white font-weight-black fadeIn2 fadeInBottom">Built for USFK, <br />Secured for you</h1>
+                        <h1 class="text-white font-weight-black fadeIn2 fadeInBottom">The only connection <br />Built for USFK</h1>
                         <img src="../assets/img/img_main_slideimg4.png" class="img-fluid" alt="" />
                       </div>
                     </div>
@@ -335,7 +335,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="page-header mainslideheight" style="background-image: url('../assets/img/img_main_slidebg5.png');" loading="lazy">
+                <div class="page-header min-vh-41" style="background-image: url('../assets/img/img_main_slidebg5.png');" loading="lazy">
                   <div class="container">
                     <div class="row textwrap">
                       <div class="col-lg-9 my-auto">
@@ -348,7 +348,7 @@
                 </div>
               </div>
             </div>
-            <div class="mainslideheight position-absolute w-100 top-0">
+            <div class="min-vh-41 position-absolute w-100 top-0">
               <a class="carousel-control-prev ms-0 mt-12 mb-n7 mt-md-0 mb-md-0" href="#carouselMain" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon position-absolute bottom-50" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
