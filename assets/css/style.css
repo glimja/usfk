@@ -193,7 +193,7 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
 .bottomsheetpop .modal-dialog {position: fixed !important;bottom: 0 !important;left: 0% !important;right: 0% !important;margin-bottom: 0 !important;} 
 .modal.show.bottomsheetpop .modal-dialog {padding: 0; transform: none;}
 .bottomsheetpop .modal-content {border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
-.modal .modal-body.scroll {overflow-y: scroll;}
+.modal .modal-body.scroll {overflow-y: auto;}
 
 /* 
  * Wireless Internet 
@@ -355,8 +355,9 @@ transition: all 0.3s ease;
 .desc14 {font-size: 14px; font-weight: 400; color: #828591; line-height: 120%;}
 
 .planlistbox {display: flex;padding: 20px 0;}
+.planlistbox .info {margin-bottom: 0;}
 .planlistbox .info .tit {padding-bottom: 4px;color: #1F2125;font-size: 20px;font-weight: 700;line-height: 140%;letter-spacing: -0.4px;}
-.planlistbox .info .desc {color: #828591;font-size: 18px;font-weight: 500;line-height: 130%;}
+.planlistbox .info .desc {margin-bottom: 0; color: #828591;font-size: 18px;font-weight: 500;line-height: 130%;}
 .navtabscroll {display: none;}
 
 .min-vh-41 {min-height: 41.5vh !important;}
@@ -556,6 +557,10 @@ transition: all 0.3s ease;
 @media (max-width: 1024px) {
   .page-tit>.tit2 {font-size: 16px;}
   .tit20 {font-size: 16px;}
+
+  .planlistbox {padding: 12px 0;}
+  .planlistbox .pe-3 img {width: 36px;}
+  .planlistbox .info .desc {font-size: 16px;}
 }
 @media (max-width: 768px) {
   .wireless-sections .navbar-collapse.show {left: 41%;}
@@ -579,6 +584,8 @@ transition: all 0.3s ease;
   .section-top .specialmenuarea .card .card-body .wrapmainspecialmenu {display: none}
   .section-top .specialmenuarea .card .card-body .mainspeicallogin {align-items: center;}
   
+  .planlistbox .pe-3 img {width: 32px;}
+  .planlistbox .info .tit {font-size: 18px;}
 }
 
 
@@ -716,6 +723,7 @@ br.mo_br {display: none;}
 
 .fs-14 {font-size: 0.9rem;}
 .navbar-toggler {margin-left: auto !important;}
+.contents.minheight {min-height: 800px;}
 
 /* button */
 .page-btn {display: flex; align-items: center; justify-content: center;}
