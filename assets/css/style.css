@@ -114,7 +114,8 @@
 .hb_tit18 {font-size: 1.125rem; font-weight: 700; color: #1F2125;}
 .input-group .form-label {position: relative;}
 .input-group>.form-control, .input-group>.form-select, .input-group>.form-floating {width: inherit;}
-.input-group>.form-control {color: #1F2125; font-size: 1.25rem;}
+.input-group>.form-control,
+.input-group>.d-flex>.form-control {color: #1F2125; font-size: 1.25rem;}
 .input-group>.form-control::placeholder {color: #CACCD2; }
 .form-control {padding: 1.0rem 0;}
 .desc1 {position: relative; font-size: 0.875rem; font-weight: 600;} 
