@@ -116,7 +116,8 @@
 .input-group>.form-control, .input-group>.form-select, .input-group>.form-floating {width: inherit;}
 .input-group>.form-control,
 .input-group>.d-flex>.form-control {color: #1F2125; font-size: 1.25rem;}
-.input-group>.form-control::placeholder {color: #CACCD2; }
+.input-group>.form-control::placeholder,
+.input-group>div>.form-control::placeholder {color: #CACCD2; }
 .form-control {padding: 1.0rem 0;}
 .desc1 {position: relative; font-size: 0.875rem; font-weight: 600;} 
 .desc1info {display: inline-block; position: relative; width: 16px; height: 16px;}
@@ -128,6 +129,7 @@
 .txt4D5461 {color: #4D5461 !important}
 .txt262C36 {color: #262C36 !important}
 .txt222 {color: #222 !important}
+.txtat {color: #ADB5BD !important}
 ol, ul {padding-left: 0;}
 ol.list, ul.list {margin-bottom: 0;}
 ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
