@@ -88,7 +88,6 @@
 }
 .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {--bs-gutter-x: 0;}
 .navbar {box-shadow: none;border-bottom: 1px solid #E9EBF0; padding: 0 1.25rem; height: 66px;}
-/* .navbar .container {max-width: 100%;} pc 화면 안됨 - 확인후 삭제필요 */
 .navbar .navbar-brand {z-index: 1;}
 .navbar h1 {display: flex; align-items: center; justify-content: center; margin: 0;}
 .footer {background: #000;}
@@ -203,28 +202,13 @@ ol.list li, ul.list li { color: #1F2125; font-size: 0.875rem; list-style: none;}
  */
 .wireless-sections {overflow: initial;}
 .wireless-sections.active {overflow: hidden;}
-.wireless-sections .navbar {height: 81px;position: fixed;
-    top: 40px;
-    width: 100%;
-    background: #fff;
-    z-index: 2;}
+.wireless-sections .navbar {height: 81px;position: fixed;top: 40px;width: 100%;background: #fff;z-index: 2;}
 .wireless-sections .navbar h1 {justify-content: flex-start; padding-left: 45px;}
 .btn.navlast {font-size: 1rem; border-radius: 50px; display: flex;padding: 6px 12px;justify-content: flex-end;align-items: center;gap: 5px;}
-.wraptopmenu {display: block;
-    padding: 8px 0;
-    background-color: #EEE;
-    position: fixed;
-    top:0;
-    width: 100%;
-    height: 40px;
-    z-index: 2;}
+.wraptopmenu {display: block;padding: 8px 0;background-color: #EEE;position: fixed;top:0;width: 100%;height: 40px;z-index: 2;}
 .topmenu {display: flex; justify-content: flex-end; width: 100%;}
 .topmenu a {padding: 0 12px; color: #828591; font-size: 0.835rem}
-
-.depth2area {display: block; min-height:170px; margin-bottom: 50px; background-color: #fff; border-bottom: 1px solid transparent;position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1;}
+.depth2area {display: block; min-height:170px; margin-bottom: 50px; background-color: #fff; border-bottom: 1px solid transparent;position: fixed;top: 0px;width: 100%;z-index: 1;}
 .depth2area.active {display: block; background-color: #fff; border-bottom: 1px solid #EFF0F5;}
 .dropdown>.dropdown-menu.depth2menu .d-lg-block, .dropdown .dropdown-menu.depth2menu .d-lg-block,
 .dropdown.dropdown-hover:hover>.dropdown-menu.depth2menu .d-lg-block, .dropdown .dropdown-menu.show.depth2menu .d-lg-block {display: flex !important;}
@@ -336,7 +320,6 @@ transition: all 0.3s ease;
 .mapbox span.m18 {left:80px; top:126px;}
 
 
-
 .list_dot>li a,
 .list_dot>li p {display: block; position: relative; padding-top: 8px; padding-left: 10px;}
 .list_dot>li p {margin: 0; color: #4D5461; font-weight:500; cursor: pointer;}
@@ -439,6 +422,7 @@ transition: all 0.3s ease;
 
 .mobileblock {display: none;} 
 .pcblock {display: block;}
+
 @media (max-width: 992px) {
   .wraptopmenu {display: none;}
   .mobileblock {display: block;}
@@ -588,17 +572,16 @@ transition: all 0.3s ease;
   .section-lguwi .wrapinfo {margin-top: 24px;}
   .section-top .specialmenuarea .card .card-body .mainspeicallogin .findidpw a {font-size: 14px;}
   .section-top .specialmenuarea {margin: -50px 30px;}
-  /* .section-top .specialmenuarea .card .card-body .wrapmainspecialmenu {display: none} */
+  .section-top .specialmenuarea .card .card-body .wrapmainspecialmenu {display: none}
   .section-top .specialmenuarea .card .card-body .mainspeicallogin {align-items: center;}
   .mainslideheight {height: 300px;}
   .section-top .specialmenuarea .card .card-body .mainspecialmenu a span {font-size: 14px;letter-spacing: -0.2px;}
   .section-top .specialmenuarea .card .card-body .mainspecialmenu a img {width: 48px; height: 48px;}
-  .wrapmainspeicallogin {flex: 0 0 auto;width: 50%;}
+  .wrapmainspeicallogin {flex: 0 0 auto;width: 100%;}
   .planlistbox .pe-3 img {width: 32px;}
   .planlistbox .info .tit {font-size: 18px;}
+  .section-top .specialmenuarea .card .card-body .mainspeicallogin .btnlogin {width: 100%;}
 }
-
-
 
 
 
@@ -1026,6 +1009,7 @@ h3.icotit::before {content:''; display: block; width: 24px; height: 24px; backgr
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-state-highlight, .ui-widget-content .ui-state-highlight {border:0; background-color:#e2e2e2; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; color:#333;}
 .ui-state-disabled, .ui-widget-content .ui-state-disabled {opacity:.5; filter:Alpha(Opacity=5);}
 .ui-datepicker-trigger {display:inline-block; box-sizing:border-box; border:1px solid transparent; background:#FFF url("../img/icon_calendar.svg") no-repeat center center; width:40px; height:40px; margin-left:5px; text-indent:-9999em; vertical-align:middle; position: absolute; bottom: 8px; right: 0;}
+.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {z-index: 2;}
 .ui-datepicker .ui-datepicker-title select {font-size: 18px; border:0; padding:0; margin-top: -4px; background:none; cursor: pointer;}
 .ui-datepicker .ui-datepicker-title .ui-datepicker-month {padding-left: 5px;}
 .ui-datepicker-buttonpane {display: flex; flex-wrap: wrap; text-align: center}

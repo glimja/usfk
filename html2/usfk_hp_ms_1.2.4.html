@@ -92,14 +92,29 @@
           </div>
 
           <div class="row mt-4">
-            <div class="input-group input-group-static mt-4 required">
+            <div class="input-group input-group-static mt-4 required" >
+              <label for="">Expiration date</label>
+              <div class="d-flex w-100">
+                <button class="form-control btn-sel me-3" data-pop-btn="">
+                  <span class="place-holder">MM</span>
+                </button>
+                <button class="form-control btn-sel" data-pop-btn="">
+                  <span class="place-holder">YY</span>
+                </button>
+              </div>
+            </div>
+            <div class="input-btn-group mt-3 mb-4">
+              <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0">Check</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0 border-0" disabled>Check</button>
+            </div>
+            <!-- <div class="input-group input-group-static mt-4 required">
               <label for="">Expiration date</label>
               <input type="text" class="form-control" id="" placeholder="MM/YY" required>
               <div class="input-btn-group">
                 <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0">Check</button>
                 <button type="button" class="btn btn-outline-secondary btn-sm rounded-2 mb-0 border-0" disabled>Check</button>
               </div>
-            </div>
+            </div> -->
             <div class="desc1 invalid mt-1">
               <span class="desc1info"></span>
               Card verification failed. Please try again.
